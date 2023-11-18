@@ -1,11 +1,11 @@
-class Heroi {
+class Hero {
   constructor(name, age, type) {
     this.name = name;
     this.age = age;
     this.type = type;
   }
 
-  atack() {
+  attack() {
     if (this.type === "mago") {
       console.log(`O ${this.type} atacou usando magia`);
     } else if (this.type === "guerreiro") {
@@ -20,6 +20,6 @@ class Heroi {
   }
 }
 
-const mago = new Heroi("Chucknoris", 150, "guerreiro");
+const mago = new Hero("Chucknoris", 150, "guerreiro");
 
-mago.atack();
+mago.attack();
